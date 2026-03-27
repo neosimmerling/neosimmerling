@@ -1,0 +1,22 @@
+<svg width="600" height="200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .l1 { stroke: #9601d122; }
+    .l2 { stroke: #91017d66; }
+    .l3 { stroke: #ff00ea; }
+
+    path {
+      fill: none;
+      stroke-width: 2;
+      stroke-dasharray: 30;
+      animation: move 3s linear infinite;
+    }
+
+    @keyframes move {
+      to { stroke-dashoffset: -60; }
+    }
+  </style>
+
+  <path class="l1" d="M0 80 Q300 20 600 80"/>
+  <path class="l2" d="M0 100 Q300 50 600 100"/>
+  <path class="l3" d="M0 120 Q300 80 600 120"/>
+</svg>
